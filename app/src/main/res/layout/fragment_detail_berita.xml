@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Judul Berita"
+                android:text="@{dataBerita.title}"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Ditulis oleh : "
+                android:text="@{dataBerita.writer}"
                 android:textColor="@color/black"
                 android:textStyle="italic" />
 
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:text="Tanggal"
+                android:text="@{dataBerita.date}"
                 android:textColor="@color/black"
                 android:textStyle="italic" />
 
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginBottom="16dp"
-                android:src="@drawable/news1" />
+                app:imageResource="@{dataBerita.image}" />
 
             <TextView
                 android:id="@+id/detail_isi"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Isi"
+                android:text="@{dataBerita.content}"
                 android:textSize="18sp"
                 android:textColor="@color/black" />
 
